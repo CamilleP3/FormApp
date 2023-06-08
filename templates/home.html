@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link  rel="stylesheet" href="{{url_for('static',filename='formstyle.css')}}" type="text/css">
+    <title>Santa Barbara</title>
+    <p id= "title"> Plan your trip to Santa Barbara! </p>
+  </head>
+  <body id= "body">
+
+    <form action='/response' method='post'>
+    <br></br>
+      <label for="hotel">What type of hotel are you looking for?</label>
+      <select id="hotel" name ="hotel">
+        <option value="BeachHotel">Beach Hotel</option>
+        <option value="DowntownHotel">Downtown Hotel</option>
+        <option value="GoletaHotel">Goleta Hotel</option>
+        <option value="MontecitoHotel">Montecito Hotel</option>
+
+      <select>    
+       
+    
+    <br></br>
+      <label for="restaurant">What type of restaurant are you looking for in Santa Barbara?</label>
+      <select id="resaurant" name ="restaurant">
+        <option value="Italian">Italian Restaurant </option>
+        <option value="Japanese">Japanese Restaurant </option>
+        <option value="Mexican">Mexican Restaurant </option>
+        <option value="Seafood">Seafood Restaurant </option>
+      <select>
+      
+      <br></br>
+      <label for="Activity">What type of activity are you looking for in Santa Barbara?</label>
+      <select id="activity" name ="activity">
+        <option value="Exercise">Exercise</option>
+        <option value="History">Historical</option>
+        <option value="Art">Artsy</option>
+        <option value="Nature">Nature</option>
+      <select>
+      <br></br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
